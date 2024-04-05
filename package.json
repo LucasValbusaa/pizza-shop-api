@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "generate": "drizzle-kit generate:pg",
-    "dev": "bun --watch src/http/server.ts",
-    "migrate": "bun src/db/migrate.ts",
-    "seed": "bun src/db/seed.ts"
+    "dev": "npx bun --watch src/http/server.ts",
+    "migrate": "npx bun src/db/migrate.ts",
+    "seed": "npx bun src/db/seed.ts"
   },
   "author": "Diego Fernandes <diego.schell.f@gmail.com>",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "@elysiajs/jwt": "^0.7.0",
     "@paralleldrive/cuid2": "2.2.2",
     "@react-email/components": "^0.0.11",
+    "bun": "^1.0.28",
     "dayjs": "^1.11.10",
     "drizzle-orm": "^0.29.1",
     "drizzle-typebox": "^0.1.1",
@@ -35,8 +36,8 @@
     "chalk": "5.3.0",
     "drizzle-kit": "0.20.6",
     "eslint": "8.54.0",
-    "eslint-plugin-drizzle": "^0.2.1",
     "eslint_d": "13.1.1",
+    "eslint-plugin-drizzle": "^0.2.1",
     "pg": "^8.11.3",
     "typescript": "5.3.2"
   }
